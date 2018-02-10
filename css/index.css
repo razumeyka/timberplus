@@ -13,8 +13,72 @@ body{
      margin:0 auto;
 }
 
-.jumbotron {
-    background-image: url(../img/background_main.jpg);
+.menu {
+    background: -webkit-linear-gradient(left, #5a9e11 0%, #b0ec66 50%,#5a9e11 100%);
+    overflow: hidden;
+}
+
+.menu nav {
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.menu nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+.menu nav ul li a {
+    padding: 10px;
+    color: white;
+}
+
+.attension {
+    background-image: url(../img/background_main2.jpg);
     background-position: center center;
     background-size: cover;
+    color: #5a9e11;
+    padding-top: 300px;
+    height: 600px;
+}
+
+.attension .for_sale1 {
+    font-size: 36px;
+}
+
+.attension .for_sale2 {
+    font-size: 20px;
+}
+
+.attension button {
+    background-color: #b0ec66;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px #5a9e11;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding: 14px;
+    margin: 20px;
+    letter-spacing: 0.8px;
+}
+
+.attension button:hover {
+    background-color: #5a9e11;
+}
+
+.advantages, .goods, .delivery, .order {
+    height: 300px;
+}
+
+.advantages {
+    background-color: azure;
 }
