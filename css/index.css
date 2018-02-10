@@ -14,8 +14,9 @@ body{
 }
 
 .menu {
-    background: -webkit-linear-gradient(left, #5a9e11 0%, #b0ec66 50%,#5a9e11 100%);
+    background: -webkit-linear-gradient(left, #40cab6 0%, #b0ec66 70%,#084e07 100%);
     overflow: hidden;
+    position: relative;
 }
 
 .menu nav {
@@ -34,11 +35,26 @@ body{
     color: white;
 }
 
+.menu .phone {
+    position: absolute;
+    right: 30px;
+}
+
+.phone img {
+    width: 50px;
+    height: 50px;
+}
+
+.phone a {
+    font-size: 24px;
+    color: white;
+}
+
 .attension {
     background-image: url(../img/background_main2.jpg);
     background-position: center center;
     background-size: cover;
-    color: #5a9e11;
+    color: #5fa592;
     padding-top: 300px;
     height: 600px;
 }
@@ -52,7 +68,7 @@ body{
 }
 
 .attension button {
-    background-color: #b0ec66;
+    background-color: #2392a2;
     display: block;
     border-radius: 2px;
     cursor: pointer;
@@ -72,13 +88,118 @@ body{
 }
 
 .attension button:hover {
-    background-color: #5a9e11;
-}
-
-.advantages, .goods, .delivery, .order {
-    height: 300px;
+    background-color: #b0ec66;
 }
 
 .advantages {
-    background-color: azure;
+    padding: 50px 0;
+}
+
+.advantages .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    box-sizing: border-box;
+    width: 33.333%;
+}
+
+.advantage img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.advantage .text {
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+.hamak {
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.goods img {
+    width: 400px;
+}
+
+.ala img, .zosya img {
+    float: left;
+    margin-right: 20px;
+}
+
+.kasya img, .doup img {
+    float: right;
+    margin-left: 20px;
+}
+
+.delivery {
+    height: 400px;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.order {
+    background-image: url(../img/background_main1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 900px;
+    padding: 100px 0;
+}
+
+.order form {
+    background-color: rgba(64, 202, 182, 0.5);
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px #f8f9fa;
+    
+}
+
+.order form label {
+    display: block;
+    width: 100%; 
+}
+
+.order form input, .order form textarea {
+    display: block;
+    width: 100%; 
+    height: 50px;
+    padding: 15px;
+    
+}
+
+.order form button {
+    background-color: #b0ec66;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px #f8f9fa;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding: 14px;
+    letter-spacing: 0.8px;
+    width: 100%;
+}
+
+.order form button:hover {
+    background-color: #2392a2;
+}
+
+footer {
+    background: -webkit-linear-gradient(left, #40cab6 0%, #b0ec66 70%,#084e07 100%);
+    height: 200px;
 }
