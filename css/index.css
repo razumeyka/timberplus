@@ -1,0 +1,20 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: 'основной шрифт', sans-serif;
+	font-size: 14px;
+	line-height:1.4;
+	min-width: 360px;
+}
+
+.wrapper {
+     max-width:1200px;
+     padding:0 40px;
+     margin:0 auto;
+}
+
+.jumbotron {
+    background-image: url(../img/background_main.jpg);
+    background-position: center center;
+    background-size: cover;
+}
