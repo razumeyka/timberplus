@@ -175,14 +175,9 @@ header {
     margin-right: 20px;
 }
 
-.advantage img:hover {
-    width: 150px;
-    height: 150px;
-}
-
 .advantage .text {
     padding: 20px 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .hamak {
@@ -203,17 +198,19 @@ header {
 }
 
 .goods img {
-    width: 500px;
-}
-
-.kasya img, .isabel img {
+    width: 700px;
     float: left;
     margin-right: 20px;
 }
 
-.ala img, .doub img {
-    float: right;
-    margin-left: 20px;
+.goods .details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.goods .details img {
+    width: 80px;
 }
 
 .terms_and_delivery {
@@ -226,6 +223,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0;
+    margin: 0 -20px;
 }
 
 .stage {
@@ -338,12 +336,12 @@ footer .cooperation {
         margin: 0;
     }
     
-   .kasya img, .isabel img {
-    clear: right;
+    .advantage {
+    width: 100%;
     }
-
-    .ala img, .doub img {
-    clear: left;
+    
+   .goods img {
+    clear: right;
     }
     
     .stage {
