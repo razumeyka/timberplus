@@ -13,10 +13,13 @@ body{
      margin:0 auto;
 }
 
+header {
+    position: relative;
+}
+
 .menu {
     background: -webkit-linear-gradient(left, #40cab6 0%, #b0ec66 70%,#084e07 100%);
     overflow: hidden;
-    position: relative;
 }
 
 .menu nav {
@@ -33,6 +36,12 @@ body{
 .menu nav ul li a {
     padding: 10px;
     color: white;
+    text-transform: uppercase;
+}
+
+.menu nav ul li a:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .menu .phone {
@@ -50,21 +59,75 @@ body{
     color: white;
 }
 
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background: #fff;
+    width: 42px;
+    height: 42px;
+    left: 10px;
+    top: 7px;
+    border: 1px solid #563997;
+    border-radius: 4px;
+}
+
+.burger span, .burger span::before, .burger span::after {
+    cursor: pointer;
+    border-radius: 5px;
+    height: 3px;
+    width: 28px;
+    background: #563997;
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 6px;
+    transition: all 200ms ease-in-out;
+}
+
+
+.burger span::before {
+    content: '';
+    left: 0;
+}
+
+.burger span::after {
+    content: '';
+    left: 0;
+    top: 20px;
+}
+
+.burger.active span {
+    background-color: transparent;
+}
+    
+ .burger.active span::before  {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+ .burger.active span::after  {
+    transform: rotate(-45deg);
+    top: 8px;
+}  
+
 .attension {
     background-image: url(../img/background_main2.jpg);
     background-position: center center;
     background-size: cover;
     color: #5fa592;
-    padding-top: 250px;
+    padding-top: 270px;
     height: 600px;
 }
 
 .attension .for_sale1 {
     font-size: 36px;
+    text-transform: uppercase;
 }
 
 .attension .for_sale2 {
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .attension button {
@@ -153,14 +216,30 @@ body{
     margin-left: 20px;
 }
 
-.delivery {
+.terms_and_delivery {
     font-size: 30px;
     text-align: center;
     padding: 30px;
 }
 
-.delivery img {
-    padding: 30px;
+.scheme {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.stage {
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.terms_and_delivery img {
+    width: 200px;
+    padding: 20px;
+}
+
+.terms_and_delivery .text {
+   font-size: 20px;
 }
 
 .order {
@@ -238,4 +317,55 @@ footer .contacts, footer .cooperation {
 footer .cooperation {
     max-width: 250px;
     text-align: right;
+}
+
+@media (max-width: 867px) {
+    
+    .menu nav {
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .menu nav {
+        position: absolute;
+        z-index: 1;
+        padding-left: 0;
+        top: 50px;
+        left: 185px;
+        margin: 0;
+    }
+    
+   .kasya img, .isabel img {
+    clear: right;
+    }
+
+    .ala img, .doub img {
+    clear: left;
+    }
+    
+    .stage {
+    width: 50%;
+    }
+    
+    .order form {
+    padding: 50px 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .wrapper {
+     padding:0 15px;
+    }
+    
+    .goods img {
+    width: 350px;
+    }
+    
+    .stage {
+    width: 100%;
+    }
 }
