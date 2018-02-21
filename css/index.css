@@ -19,15 +19,16 @@ header {
 
 .menu {
     background: -webkit-linear-gradient(left, #40cab6 0%, #b0ec66 70%,#084e07 100%);
-    overflow: hidden;
+    height: 60px;
 }
 
-.menu nav {
+.menu .navbar ul {
     display: block;
-    margin: 0 0 0 auto;
+    padding: 0;
+    margin-left: -30px;
 }
 
-.menu nav ul li {
+.menu .navbar ul li {
     float: left;
     list-style: none;
     margin: 10px;
@@ -40,23 +41,24 @@ header {
 }
 
 .menu nav ul li a:hover {
-    color: black;
+    color: #256755;
     text-decoration: none;
 }
 
 .menu .phone {
     position: absolute;
     right: 30px;
+    top: 10px;
 }
 
-.phone img {
-    width: 50px;
-    height: 50px;
+.menu .phone a:hover {
+    text-decoration: none;
 }
 
 .phone a {
     font-size: 24px;
     color: white;
+    padding: 0;
 }
 
 .burger {
@@ -64,11 +66,11 @@ header {
     position: absolute;
     cursor: pointer;
     background: #fff;
-    width: 42px;
-    height: 42px;
-    left: 10px;
+    width: 44px;
+    height: 44px;
+    left: 40px;
     top: 7px;
-    border: 1px solid #563997;
+    border: 1px solid #5fa592;
     border-radius: 4px;
 }
 
@@ -76,8 +78,8 @@ header {
     cursor: pointer;
     border-radius: 5px;
     height: 3px;
-    width: 28px;
-    background: #563997;
+    width: 30px;
+    background: #5fa592;
     position: absolute;
     display: block;
     top: 10px;
@@ -103,12 +105,12 @@ header {
     
  .burger.active span::before  {
     transform: rotate(45deg);
-    top: 8px;
+    top: 10px;
 }
 
  .burger.active span::after  {
     transform: rotate(-45deg);
-    top: 8px;
+    top: 10px;
 }  
 
 .attension {
@@ -130,7 +132,7 @@ header {
     text-transform: uppercase;
 }
 
-.attension button {
+.attension button, .goods button {
     background-color: #b0ec66;
     display: block;
     border-radius: 2px;
@@ -138,7 +140,7 @@ header {
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    box-shadow: 0px 0px 5px #5a9e11;
+    box-shadow: 0px 0px 5px #2392a2;
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -146,7 +148,7 @@ header {
     line-height: 1.2;
     text-align: center;
     padding: 14px;
-    margin: 20px;
+    margin-top: 20px;
     letter-spacing: 0.8px;
 }
 
@@ -166,6 +168,7 @@ header {
 .advantage {
     box-sizing: border-box;
     width: 33.333%;
+    padding: 20px;
 }
 
 .advantage img {
@@ -176,8 +179,8 @@ header {
 }
 
 .advantage .text {
-    padding: 20px 10px;
     font-size: 16px;
+    text-align: justify;
 }
 
 .hamak {
@@ -192,25 +195,65 @@ header {
     padding-top: 30px;
 }
 
+.goods .about {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
 .goods .description {
     text-align: justify;
     padding: 30px 20px;
+    width: 70%;
+}
+
+.goods .price {
+    padding-left: 20px;
+    font-size: 30px;
+    width: 30%;
+    text-align: center;
+}
+
+.goods .price button {
+    background-color: #5fa592;
+    margin: 20px auto;
+    padding: 20px 40px;
+}
+
+.goods button a {
+    color: #ffffff;
+}
+
+.goods button a:hover {
+    text-decoration: none;
 }
 
 .goods img {
-    width: 700px;
+    width: 70%;
     float: left;
     margin-right: 20px;
 }
 
 .goods .details {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 30px;
+}
+
+.goods .details .detail {
+    align-self: center; 
+    display: flex;
+    flex-direction: row;
 }
 
 .goods .details img {
     width: 80px;
+    margin: 10px;
+}
+
+.goods .details .text {
+    max-width: 100px;
+    padding: 30px 10px;
 }
 
 .terms_and_delivery {
@@ -304,11 +347,12 @@ footer .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 40px;
 }
 
 footer .contacts, footer .cooperation {
     max-width: 300px;
-    padding: 50px 0;
+    padding: 10px 0;
     color: white;
 }
 
@@ -317,23 +361,49 @@ footer .cooperation {
     text-align: right;
 }
 
+@media (max-width: 933px) {
+    .goods img {
+    float: none;
+    margin: o auto;
+    width: 100%;
+    }
+
+   .goods .details {
+    flex-direction: row;
+    margin: 10px;
+    }
+    
+    .goods .details .detail {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+    }
+}
+
 @media (max-width: 867px) {
     
-    .menu nav {
-        display: none;
+    .menu .navbar {
+    display: none;
     }
     
     .burger {
-        display: block;
+    display: block;
     }
     
-    .menu nav {
-        position: absolute;
-        z-index: 1;
-        padding-left: 0;
-        top: 50px;
-        left: 185px;
-        margin: 0;
+    .menu .navbar ul {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 25px;
+    }
+    
+    .menu .navbar ul li {
+    float: none;
+    background-color: #b0ec66;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0px 0px 3px #2392a2;
     }
     
     .advantage {
@@ -353,14 +423,42 @@ footer .cooperation {
     }
 }
 
+@media (max-width: 766px) {
+    
+    .goods .description {
+    width: 100%;
+    }
+
+    .goods .price {
+    text-align: left;
+    }
+    
+    .goods .price button {
+        
+    }
+    
+    .goods .details .detail {
+    width: 50%;
+    }
+    
+    footer .wrapper {
+    justify-content: center;
+    }
+    
+    footer .contacts, footer .cooperation {
+    width: 100%;
+    text-align: center;
+    }
+}
+
 @media (max-width: 550px) {
     
     .wrapper {
      padding:0 15px;
     }
     
-    .goods img {
-    width: 350px;
+    .burger {
+     left: 15px;   
     }
     
     .stage {

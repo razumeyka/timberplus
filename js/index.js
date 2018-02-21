@@ -12,10 +12,10 @@ $(function() {
 
 $( '.burger' ).click( function() {
    if ( $( '.navbar' ).is( ':hidden' ) ) {
-    $( '.menu' ).show('slideToggle');
+    $( '.navbar' ).show('slideToggle');
     $( ".burger" ).addClass( "active" );
   } else {
-    $( '.menu' ).hide('slideToggle');
+    $( '.navbar' ).hide('slideToggle');
     $( ".burger" ).removeClass( "active" );
   }
 });
