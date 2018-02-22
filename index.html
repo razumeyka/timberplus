@@ -205,19 +205,11 @@
         </section>
         <section class="order" id="order">
         <div class="wrapper">
-            <form id="contact-form">
-                <label> 
-                   <input type="text" name="name" id="name" placeholder="Имя" required>
-                </label>
-                <label> 
-                   <input type="text" name="email" id="email" placeholder="Email" required>
-                </label>
-                <label> 
-                   <input type="text" name="number" id="number" placeholder="Номер телефона" required>
-                </label>
-                <label> 
-                   <textarea id="order" placeholder="Модель и цвет гамака"></textarea>
-                </label>
+            <form id="contact-form" method="POST">
+                <input type="text" name="name" id="name" placeholder="Имя" required> 
+                <input type="text" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="number" id="number" placeholder="Номер телефона" required>
+                <textarea id="order" placeholder="Модель и цвет гамака"></textarea>
                 <button type="button">Отправить</button>
             </form>
             <dialog id="thank-dialog">
