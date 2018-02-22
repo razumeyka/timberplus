@@ -13,19 +13,26 @@ body{
      margin:0 auto;
 }
 
+
 header {
     position: relative;
+    background-image: url(../img/background_main2.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: #4d66b1;
+    height: 600px;
 }
 
 .menu {
-    background: -webkit-linear-gradient(left, #40cab6 0%, #b0ec66 70%,#084e07 100%);
+    background-color: rgba(163, 198, 221, 0.75);
     height: 60px;
 }
 
 .menu .navbar ul {
     display: block;
-    padding: 0;
-    margin-left: -30px;
+    padding: 10px;
+    margin: 0 0 0-30px;
+    overflow: hidden;
 }
 
 .menu .navbar ul li {
@@ -38,20 +45,20 @@ header {
     padding: 10px;
     color: white;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .menu nav ul li a:hover {
     color: #256755;
-    text-decoration: none;
 }
 
 .menu .phone {
     position: absolute;
     right: 30px;
-    top: 10px;
+    top: 15px;
 }
 
-.menu .phone a:hover {
+.menu .phone a {
     text-decoration: none;
 }
 
@@ -67,7 +74,7 @@ header {
     cursor: pointer;
     background: #fff;
     width: 44px;
-    height: 44px;
+    height: 45px;
     left: 40px;
     top: 7px;
     border: 1px solid #5fa592;
@@ -82,8 +89,8 @@ header {
     background: #5fa592;
     position: absolute;
     display: block;
-    top: 10px;
-    left: 6px;
+    top: 11px;
+    left: 7px;
     transition: all 200ms ease-in-out;
 }
 
@@ -96,7 +103,7 @@ header {
 .burger span::after {
     content: '';
     left: 0;
-    top: 20px;
+    top: 22px;
 }
 
 .burger.active span {
@@ -113,34 +120,26 @@ header {
     top: 10px;
 }  
 
-.attension {
-    background-image: url(../img/background_main2.jpg);
-    background-position: center center;
-    background-size: cover;
-    color: #5fa592;
-    padding-top: 270px;
-    height: 600px;
-}
-
-.attension .for_sale1 {
+header .for_sale1 {
     font-size: 36px;
     text-transform: uppercase;
+    padding-top: 200px;
 }
 
-.attension .for_sale2 {
+header .for_sale2 {
     font-size: 20px;
     text-transform: uppercase;
 }
 
-.attension button, .goods button {
-    background-color: #b0ec66;
+header button, .goods button {
+    background-color: #a1d5ec;
     display: block;
     border-radius: 2px;
     cursor: pointer;
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    box-shadow: 0px 0px 5px #2392a2;
+    box-shadow: 0px 0px 5px #4d66b1;
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -152,8 +151,8 @@ header {
     letter-spacing: 0.8px;
 }
 
-.attension button:hover {
-    background-color: #2392a2;
+header button:hover {
+    background-color: #4d66b1;
 }
 
 .advantages {
@@ -168,19 +167,25 @@ header {
 .advantage {
     box-sizing: border-box;
     width: 33.333%;
-    padding: 20px;
+    padding: 10px;
 }
 
 .advantage img {
     width: 100px;
     height: 100px;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .advantage .text {
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
+}
+
+.advantage .text h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    text-align: left;
 }
 
 .hamak {
@@ -197,7 +202,6 @@ header {
 
 .goods .about {
     display: flex;
-    flex-wrap: wrap;
 } 
 
 .goods .description {
@@ -214,17 +218,18 @@ header {
 }
 
 .goods .price button {
-    background-color: #5fa592;
+    background-color: #4d66b1;
     margin: 20px auto;
     padding: 20px 40px;
 }
 
 .goods button a {
+    text-decoration: none;
     color: #ffffff;
 }
 
 .goods button a:hover {
-    text-decoration: none;
+    
 }
 
 .goods img {
@@ -351,13 +356,18 @@ footer .wrapper {
 }
 
 footer .contacts, footer .cooperation {
-    max-width: 300px;
+    max-width: 320px;
     padding: 10px 0;
     color: white;
 }
 
+footer .contacts a {
+    text-decoration: none;
+    color: white;
+}
+
+
 footer .cooperation {
-    max-width: 250px;
     text-align: right;
 }
 
@@ -393,8 +403,8 @@ footer .cooperation {
     .menu .navbar ul {
     position: absolute;
     z-index: 1;
-    top: 60px;
-    left: 25px;
+    top: 50px;
+    left: 55px;
     }
     
     .menu .navbar ul li {
@@ -425,20 +435,30 @@ footer .cooperation {
 
 @media (max-width: 766px) {
     
+    .goods .about {
+    flex-wrap: wrap;
+    } 
+
     .goods .description {
     width: 100%;
     }
 
     .goods .price {
-    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     }
     
     .goods .price button {
-        
+    margin: 0 20px;    
     }
     
     .goods .details .detail {
     width: 50%;
+    }
+    
+    .order {
+    background-image: url(../img/background_main3.jpg);
     }
     
     footer .wrapper {
@@ -459,6 +479,10 @@ footer .cooperation {
     
     .burger {
      left: 15px;   
+    }
+    
+    .menu .navbar ul {
+    left:30px;
     }
     
     .stage {
