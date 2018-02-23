@@ -25,7 +25,7 @@ $(function(){
 });
 
 function sendForm(ev) {
-    const form  = document.getElementsByTagName('form')[0];
+    const form=  document.getElementsByTagName('form')[0];
     if (form.checkValidity()) {
         ev.preventDefault();
         $.ajax({
