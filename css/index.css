@@ -48,6 +48,8 @@ header {
 }
 
 .menu nav ul li a:hover {
+    box-sizing: border-box;
+    border-radius: 5px;
     background-color: #4d66b1;
 }
 
@@ -130,15 +132,15 @@ header .for_sale2 {
     text-transform: uppercase;
 }
 
-header button, .goods button {
-    background-color: rgba(163, 198, 221, 0.75);
+header button, .goods button{
+    background-color: rgba(163, 198, 221, 0.5);
     display: block;
     border-radius: 2px;
     cursor: pointer;
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    box-shadow: 0px 0px 5px #4d66b1;
+    box-shadow: 2px 2px 3px #4d66b1;
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -152,6 +154,12 @@ header button, .goods button {
 
 header button:hover {
     background-color: #4d66b1;
+    box-shadow: none;
+}
+
+header button a, .goods button a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .advantages {
@@ -189,7 +197,7 @@ header button:hover {
 
 .hamak {
     overflow: hidden;
-    margin: 25px 0;
+    margin: 30px 0;
     box-sizing: border-box;
 }
 
@@ -201,17 +209,15 @@ header button:hover {
 
 .goods .about {
     display: flex;
-    margin: 10px 0;
+    margin: 10px;
 } 
 
 .goods .description {
     text-align: justify;
-    padding: 30px 20px;
     width: 70%;
 }
 
 .goods .price {
-    padding-left: 20px;
     font-size: 30px;
     width: 30%;
     text-align: center;
@@ -220,22 +226,21 @@ header button:hover {
 .goods .price button {
     background-color: #4d66b1;
     margin: 20px auto;
-    padding: 20px 40px;
+    padding: 15px;
     width: 70%;
+    height: 50px;
 }
 
-.goods button a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.goods button a:hover {
+.goods .price button:hover {
+    background-color: #f7a801;
+    box-shadow: none;
     
 }
 
 .goods img {
     width: 70%;
     float: left;
+    padding: 10px;
     margin-right: 20px;
 }
 
@@ -286,7 +291,9 @@ header button:hover {
 }
 
 .terms_and_delivery .text {
-   font-size: 16px;
+    max-width: 200px;
+    text-align: center;
+    font-size: 16px;
 }
 
 .order {
@@ -308,7 +315,7 @@ header button:hover {
     border-radius: 10px;
 }
 
-.order form input, .order form textarea {
+.order form input, .order form select {
     display: block;
     width: 100%; 
     height: 50px;
@@ -316,6 +323,7 @@ header button:hover {
     border-radius: 10px;
     margin: 15px auto;
     box-sizing: border-box;
+    border: none;
 }
 
 .order form button {
@@ -339,7 +347,7 @@ header button:hover {
 }
 
 .order form button:hover {
-    background-color: #bf9e65;
+    background-color: #f7a801;
 }
 
 footer {
@@ -353,17 +361,16 @@ footer .wrapper {
     padding: 40px;
 }
 
-footer .contacts, footer .cooperation {
+footer .contacts, footer .cooperation{
     max-width: 320px;
-    padding: 10px 0;
     color: white;
+    padding: 10px 0;
 }
 
 footer .contacts a {
     text-decoration: none;
     color: white;
 }
-
 
 footer .cooperation {
     text-align: right;

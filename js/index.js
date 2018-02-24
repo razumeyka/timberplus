@@ -32,10 +32,11 @@ function sendForm(ev) {
             url: "https://formspree.io/anastasiya.razumeyko@gmail.com", 
             method: "POST",
             data: {
-                name: $('#name').val(),
+                имя: $('#name').val(),
                 email: $('#email').val(),
-                feedback: $('#number').val(),
-                order: $('#order').val()
+                телефон: $('#number').val(),
+                модель: $('#type').val(),
+                цвет: $('#color').val(),
             },
             dataType: "json"
         })
