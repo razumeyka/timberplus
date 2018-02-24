@@ -4,7 +4,7 @@ body{
 	font-family: 'основной шрифт', sans-serif;
 	font-size: 14px;
 	line-height:1.4;
-	min-width: 360px;
+	min-width: 300px;
 }
 
 .wrapper {
@@ -63,10 +63,14 @@ header {
     text-decoration: none;
 }
 
-.phone a {
+.menu .phone a {
     font-size: 24px;
     color: white;
     padding: 0;
+}
+
+.menu .phone a:hover {
+    color: #f7a801;
 }
 
 .burger {
@@ -140,7 +144,7 @@ header button, .goods button{
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    box-shadow: 2px 2px 3px #4d66b1;
+    box-shadow: 2px 2px 3px #8b99c5;
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -215,6 +219,7 @@ header button a, .goods button a {
 .goods .description {
     text-align: justify;
     width: 70%;
+    padding-bottom: 20px;
 }
 
 .goods .price {
@@ -226,9 +231,8 @@ header button a, .goods button a {
 .goods .price button {
     background-color: #4d66b1;
     margin: 20px auto;
-    padding: 15px;
-    width: 70%;
     height: 50px;
+    width: 70%;
 }
 
 .goods .price button:hover {
@@ -264,7 +268,7 @@ header button a, .goods button a {
 
 .goods .details .text {
     max-width: 100px;
-    padding: 30px 10px;
+    padding: 50px 10px;
 }
 
 .terms_and_delivery {
@@ -294,6 +298,7 @@ header button a, .goods button a {
     max-width: 200px;
     text-align: center;
     font-size: 16px;
+    margin: 0 auto;
 }
 
 .order {
@@ -370,10 +375,22 @@ footer .contacts, footer .cooperation{
 footer .contacts a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+}
+
+footer .contacts a:hover {
+    color: #f7a801;
+    font-weight: bold;
 }
 
 footer .cooperation {
     text-align: right;
+}
+
+footer .bold {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
 }
 
 @media (max-width: 933px) {
@@ -459,7 +476,8 @@ footer .cooperation {
     }
     
     .goods .price button {
-    margin: 0 20px;    
+    margin: 0 0 0 auto; 
+    width: 40%;
     }
     
     .goods .details .detail {
@@ -492,6 +510,31 @@ footer .cooperation {
     
     .menu .navbar ul {
     left:30px;
+    }
+    
+    .goods .price {
+    width: 100%;
+    display: block;
+    }
+    
+    .goods .price button {
+    margin: 0 auto;    
+    }
+    
+    .goods .details .detail {
+    flex-direction: column;
+    }
+    
+    .goods .details img {
+    width: 60px;
+    padding: 0;
+    margin: 0 auto;
+    }
+    
+    .goods .details .text {
+    width: auto;
+    padding: 10px;
+    margin: 0 auto;
     }
     
     .stage {
