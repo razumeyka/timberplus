@@ -38,9 +38,7 @@ function sendForm(ev) {
                 модель: $('#type').val(),
                 цвет: $('#color').val(),
             },
-            dataType: "json"
         })
-         .done( () => $('#thank-dialog').attr('open', 'open') )
-         .fail( () => $('#error-dialog').attr('open', 'open') );    
+        dataType: "json"
     }
 }
