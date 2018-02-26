@@ -70,7 +70,7 @@ header {
 
 .menu .phone {
     position: absolute;
-    right: 30px;
+    right: 15px;
     top: 15px;
 }
 
@@ -413,26 +413,6 @@ footer .bold {
 }
 
 @media (max-width: 933px) {
-    .goods img {
-    float: none;
-    margin: o auto;
-    width: 100%;
-    }
-
-   .goods .details {
-    flex-direction: row;
-    margin: 10px;
-    }
-    
-    .goods .details .detail {
-    box-sizing: border-box;
-    width: 25%;
-    padding: 10px;
-    }
-}
-
-@media (max-width: 867px) {
-    
     .menu .navbar {
     display: none;
     }
@@ -460,6 +440,26 @@ footer .bold {
     .menu nav ul li:hover {
     background-color: #4d66b1;
     }
+    
+    .goods img {
+    float: none;
+    margin: o auto;
+    width: 100%;
+    }
+
+   .goods .details {
+    flex-direction: row;
+    margin: 10px;
+    }
+    
+    .goods .details .detail {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+    }
+}
+
+@media (max-width: 867px) {
     
     .advantage {
     width: 100%;
@@ -551,6 +551,7 @@ footer .bold {
     width: auto;
     padding: 10px;
     margin: 0 auto;
+    text-align: center;
     }
     
     .stage {
