@@ -20,6 +20,7 @@ body{
 	font-size: 14px;
 	line-height:1.4;
 	min-width: 300px;
+    color: #5c594d;
 }
 
 .wrapper {
@@ -33,7 +34,6 @@ header {
     background-image: url(../img/background_main2.jpg);
     background-position: center center;
     background-size: cover;
-    color: #4d66b1;
     height: 700px;
 }
 
@@ -82,10 +82,6 @@ header {
     font-size: 24px;
     color: white;
     padding: 0;
-}
-
-.menu .phone a:hover {
-    color: #f7a801;
 }
 
 .burger {
@@ -138,17 +134,18 @@ header {
  .burger.active span::after  {
     transform: rotate(-45deg);
     top: 10px;
-}  
+} 
+
+header .for_sale1, header .for_sale2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #5c594d;;
+}
 
 header .for_sale1 {
     font-size: 36px;
-    text-transform: uppercase;
     padding-top: 200px;
-}
-
-header .for_sale2 {
-    font-size: 20px;
-    text-transform: uppercase;
 }
 
 header button, .goods button{
@@ -239,6 +236,7 @@ header button a, .goods button a {
 
 .goods .price {
     font-size: 30px;
+    font-weight: bold;
     width: 30%;
     text-align: center;
 }
@@ -253,7 +251,6 @@ header button a, .goods button a {
 .goods .price button:hover {
     background-color: #f7a801;
     box-shadow: none;
-    
 }
 
 .goods img {
