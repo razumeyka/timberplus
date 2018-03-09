@@ -42,3 +42,10 @@ function sendForm(ev) {
         dataType: "json"
     }
 }
+
+$(document).ready(function(){
+  $(".details").hide();
+  $(".flex").click(function(){
+        $(this).next().slideToggle("slow");
+    });
+});

@@ -11,6 +11,8 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <title>Гамаки из гнутого дерева</title>
 </head>
 <body>
@@ -36,15 +38,138 @@
         </div>
         </div>
         <div class="wrapper">
-            <div class="for_sale1">pайский отдых у себя дома</div>
+            <div class="for_sale1 animated zoomIn">pайский отдых у себя дома</div>
             <div class="for_sale2">можно купить у нас</div>
             <button><a class="smooth" href="#goods">Выбрать гамак</a></button>
         </div>
     </header>
     <main>
+        <div class="test">
+         <div class="wrapper">
+          <h3>выбрать каркас:</h3>
+            <div class="number"></div>
+            <img class="bigger animated slideInLeft" src="img/stand.png" alt="каркас">
+            <div class="test2">
+                <a data-fancybox data-src="#hidden-content" href="javascript:;">Kasia</a>
+                    <div class="details" id="hidden-content">
+                    <div class="detail length">
+                        <img src="img/length.png" alt="длина">
+                        <div class="text">Длина: 440см</div>
+                    </div>
+                    <div class="detail height">
+                        <img src="img/height.png" alt="высота">
+                        <div class="text">Высота: 155см</div>
+                    </div>
+                    <div class="detail width">
+                        <img src="img/width_stand.png" alt="ширина">
+                        <div class="text">Ширина: 145см</div>
+                    </div>
+                    <div class="detail maxweight">
+                        <img src="img/maxweight.png" alt="макс нагрузка">
+                        <div class="text">Максимальная нагрузка: 140кг</div>
+                    </div>
+                    </div>
+                <a data-fancybox data-src="#hidden-content" href="javascript:;">Ala</a>
+                    <div class="details">
+                     <div class="detail length">
+                         <img src="img/length.png" alt="длина">
+                         <div class="text">Длина: 355см</div>
+                     </div>
+                     <div class="detail height">
+                         <img src="img/height.png" alt="высота">
+                         <div class="text">Высота: 135см</div>
+                     </div>
+                     <div class="detail width">
+                         <img src="img/width_stand.png" alt="ширина">
+                         <div class="text">Ширина: 104см</div>
+                     </div>
+                     <div class="detail maxweight">
+                         <img src="img/maxweight.png" alt="макс нагрузка">
+                         <div class="text">Максимальная нагрузка: 120см</div>
+                     </div>
+                   </div>
+                <a data-fancybox data-src="#hidden-content" href="javascript:;">Isabel</a>
+                                   <div class="details">
+                     <div class="detail length">
+                         <img src="img/length.png" alt="длина">
+                         <div class="text">Длина: 385см</div>
+                     </div>
+                     <div class="detail height">
+                         <img src="img/height.png" alt="высота">
+                         <div class="text">Высота: 140см</div>
+                     </div>
+                     <div class="detail width">
+                         <img src="img/width_stand.png" alt="ширина">
+                         <div class="text">Ширина: 120см</div>
+                     </div>
+                     <div class="detail maxweight">
+                         <img src="img/maxweight.png" alt="макс нагрузка">
+                         <div class="text">Максимальная нагрузка: 120см</div>
+                     </div>
+                   </div>
+            </div>
+            <img class="smaller animated slideInRight" src="img/doub_stojak.png" alt="">
+            <div class="test3">
+                <a data-fancybox data-src="#hidden-content" href="javascript:;">Doub</a>
+                    <div class="details">
+                     <div class="detail length">
+                         <img src="img/length.png" alt="длина">
+                         <div class="text">Длина: 325см</div>
+                     </div>
+                     <div class="detail height">
+                         <img src="img/height.png" alt="высота">
+                         <div class="text">Высота: 195см</div>
+                     </div>
+                     <div class="detail width">
+                         <img src="img/width_stand.png" alt="ширина">
+                         <div class="text">Ширина: 200см</div>
+                     </div>
+                     <div class="detail maxweight">
+                         <img src="img/maxweight.png" alt="макс нагрузка">
+                         <div class="text">Максимальная нагрузка: 140кгсм</div>
+                     </div>
+                   </div>
+            </div>
+         </div>
+         </div>
+         <div class="test_hamak">
+             <div class="wrapper">
+                 <h3>выбрать гамак</h3>
+                 <div class="types">
+                    <a href="/img/morskaya_volna.png" data-fancybox="group" data-caption="My caption #1" class="animated zoomIn"><img src="/img/morskaya_volna.png" alt="">
+                    </a>
+                    <a href="/img/ecru.png" data-fancybox="group" data-caption="My caption #2" class="animated zoomIn">
+                     <img src="/img/ecru.png" alt="">
+                     </a>
+                     <a href="/img/terakotta.png" data-fancybox="group" data-caption="My caption #3" class="animated zoomIn">
+                     <img src="/img/terakotta.png" alt="">
+                     </a>
+                 </div>
+             </div>
+         </div>
+        <section class="step3">
+            <div class="wrapper">
+            <h3>заявить о себе</h3>
+            <form id="contact-form">
+                <span>
+                <input type="text" name="name" id="name" placeholder="Имя*" required>
+                </span> 
+                <span>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+                </span>
+                <span>
+                <input type="text" name="number" id="number" placeholder="Номер телефона*" required>
+                 </span>
+                <span>
+                <button type="button">Хочу гамак!</button>
+                </span>
+            </form>
+            </div>
+        </section>
         <section class="advantages">
+        <h3>о качестве материалов</h3>
         <div class="wrapper">
-           <div class="first advantage">
+               <div class="first advantage">
                <img src="img/icon1.png" alt="">
                <div class="text">	
                    <h3>Клееная ель</h3>
@@ -67,148 +192,36 @@
            </div>
         </div>
         </section>
-        <section class="goods" id="goods">
-        <div class="wrapper">
-           <div class="hamak kasia" id="kasia">
-                <h3>Гамак "Kasia"</h3>
-                <div class="about">
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus porro reprehenderit cupiditate doloremque reiciendis recusandae nemo non cum, laboriosam, sapiente, odio soluta. </div>
-                    <div class="price">
-                        <div>8 450 грн</div>
-                        <button><a class="smooth" href="#order">заказать</a></button>
-                    </div>
-                </div>
-                <img src="img/kasya2.jpg" alt="гамак Kasia">
-                <div class="details">
-                    <div class="detail length">
-                        <img src="img/length.png" alt="длина">
-                        <div class="text">Длина: 440см</div>
-                    </div>
-                    <div class="detail height">
-                        <img src="img/height.png" alt="высота">
-                        <div class="text">Высота: 155см</div>
-                    </div>
-                    <div class="detail width">
-                        <img src="img/width_stand.png" alt="ширина">
-                        <div class="text">Ширина: 145см</div>
-                    </div>
-                    <div class="detail maxweight">
-                        <img src="img/maxweight.png" alt="макс нагрузка">
-                        <div class="text">Максимальная нагрузка: 140кг</div>
-                    </div>
-               </div>
-           </div>
-           <div class="hamak ala" id="ala">
-                <h3>Гамак "Ala"</h3>
-                <div class="about">
-                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maiores inventore velit dicta sunt molestias vitae assumenda quia, optio amet, quas ducimus impedit tempore, adipisci reiciendis dolorem fugit et ipsum harum, odit error esse excepturi ea. Nemo totam  </div>
-                     <div class="price">
-                         <div>8 450 грн</div>
-                         <button><a class="smooth" href="#order">заказать</a></button>
-                     </div>
-                </div>
-                <img src="img/ala2.jpg" alt="гамак ala">
-                <div class="details">
-                     <div class="detail length">
-                         <img src="img/length.png" alt="длина">
-                         <div class="text">Длина: 355см</div>
-                     </div>
-                     <div class="detail height">
-                         <img src="img/height.png" alt="высота">
-                         <div class="text">Высота: 135см</div>
-                     </div>
-                     <div class="detail width">
-                         <img src="img/width_stand.png" alt="ширина">
-                         <div class="text">Ширина: 104см</div>
-                     </div>
-                     <div class="detail maxweight">
-                         <img src="img/maxweight.png" alt="макс нагрузка">
-                         <div class="text">Максимальная нагрузка: 120см</div>
-                     </div>
-               </div>
-           </div>
-           <div class="hamak isabel" id="isabel">
-               <h3>Гамак "Isabel"</h3>
-               <div class="about">
-                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit obcaecati fuga accusamus culpa deserunt neque reiciendis consequuntur blanditiis. Similique, ea. Assumenda</div>
-                     <div class="price">
-                         <div>8 450 грн</div>
-                         <button><a class="smooth" href="#order">заказать</a></button>
-                     </div>
-               </div>
-               <img src="img/isabel2.jpg" alt="гамак isabel">
-               <div class="details">
-                     <div class="detail length">
-                         <img src="img/length.png" alt="длина">
-                         <div class="text">Длина: 385см</div>
-                     </div>
-                     <div class="detail height">
-                         <img src="img/height.png" alt="высота">
-                         <div class="text">Высота: 140см</div>
-                     </div>
-                     <div class="detail width">
-                         <img src="img/width_stand.png" alt="ширина">
-                         <div class="text">Ширина: 120см</div>
-                     </div>
-                     <div class="detail maxweight">
-                         <img src="img/maxweight.png" alt="макс нагрузка">
-                         <div class="text">Максимальная нагрузка: 120см</div>
-                     </div>
-               </div>
-           </div>
-           <div class="hamak doub" id="doub">
-               <h3>Гамак "Doub"</h3>
-               <div class="about">
-                     <div class="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus temporibus hic assumenda modi, omnis officia error sunt expedita illum odio consequuntur deleniti, harum facere fuga consequatur cupiditate voluptas repudiandae quidem laudantium cum sint </div>
-                     <div class="price">
-                         <div>8 450 грн</div>
-                         <button><a class="smooth" href="#order">заказать</a></button>
-                     </div>
-               </div>
-               <img src="img/doub2.jpg" alt="гамак doub">
-               <div class="details">
-                     <div class="detail length">
-                         <img src="img/length.png" alt="длина">
-                         <div class="text">Длина: 325см</div>
-                     </div>
-                     <div class="detail height">
-                         <img src="img/height.png" alt="высота">
-                         <div class="text">Высота: 195см</div>
-                     </div>
-                     <div class="detail width">
-                         <img src="img/width_stand.png" alt="ширина">
-                         <div class="text">Ширина: 200см</div>
-                     </div>
-                     <div class="detail maxweight">
-                         <img src="img/maxweight.png" alt="макс нагрузка">
-                         <div class="text">Максимальная нагрузка: 140кгсм</div>
-                     </div>
-               </div>
-           </div>
-        </div>
-        </section>
-        <section class="terms_and_delivery" id="terms_and_delivery">
-        <div class="wrapper">
-            <h2>Гамак получить очень просто:</h2>
-            <div class="scheme">
-                <div class="stage terms">
-                    <img src="img/terms.png" alt="">
-                    <div class="text">Оставить заявку ниже либо позвонить нашим специалистам</div>
-                </div>
-                <div class="stage delivery">
-                    <img src="img/delivery.png" alt="">
-                    <div class="text">Подождать недельку, пока гамак приедет к Вам</div>
-                </div>
-                <div class="stage payment">
-                    <img src="img/payment.png" alt="">
-                    <div class="text">Оплатить товар при получении</div>
-                </div>
-                <div class="stage enjoy">
-                    <img src="img/enjoy.png" alt="">
-                    <div class="text">Наслаждаться покупкой!</div>
-                </div>
+        <section class="gallery">
+            <div class="wrapper">
+            <h3>фотогалерея для вдохновения</h3>
+            <div class="photos">
+            <a href="/img/gallery1.jpg" data-fancybox="group" data-caption="Caption #1">
+                <img src="/img/gallery1.jpg" alt="">
+            </a>
+            <a href="/img/gallery2.jpg" data-fancybox="group" data-caption="Caption #1">
+                <img src="/img/gallery3.jpg" alt="">
+            </a>
+            <a href="/img/gallery9.jpg" data-fancybox="group" data-caption="Caption #1">
+                <img src="/img/gallery9.jpg" alt="">
+            </a>
+            <a href="/img/gallery4.jpg" data-fancybox="group" data-caption="Caption #1">
+                <img src="/img/gallery4.jpg" alt="">
+            </a>
+            <a href="/img/gallery5.jpg" data-fancybox="group" data-caption="Caption #1">
+                <img src="/img/gallery5.jpg" alt="">
+            </a>
+            <a href="/img/gallery7.jpg" data-fancybox="group" data-caption="Caption #1">
+                <img src="/img/gallery7.jpg" alt="">
+            </a>
+            <a href="/img/gallery8.jpg" data-fancybox="group" data-caption="Caption #1">
+                <img src="/img/gallery8.jpg" alt="">
+            </a>
+            <a href="/img/gallery6.jpg" data-fancybox="group" data-caption="Caption #1">
+                <img src="/img/gallery6.jpg" alt="">
+            </a>
             </div>
-        </div>
+            </div>
         </section>
         <section class="order" id="order">
         <div class="wrapper">
@@ -227,7 +240,7 @@
                     <option id="color" value="терракотовый">Терракотовый</option>
                     <option id="color" value="экрю">Экрю</option>
                 </select>
-                <button type="button">Отправить</button>
+                <button type="button">Нужна консультация</button>
             </form>
         </div>
         </section>
@@ -250,5 +263,6 @@
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script src="js/index.js"></script>
 </html>

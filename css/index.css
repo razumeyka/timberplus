@@ -60,11 +60,14 @@ header {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    transition: background-color 0.8s 0.1s ease;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
 }
 
 .menu nav ul li a:hover {
     box-sizing: border-box;
-    border-radius: 5px;
     background-color: #4d66b1;
 }
 
@@ -166,6 +169,10 @@ header button, .goods button{
     padding: 14px;
     margin-top: 20px;
     letter-spacing: 0.8px;
+    transition: background-color 0.8s 0.1s ease;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
 }
 
 header button:hover {
@@ -178,8 +185,165 @@ header button a, .goods button a {
     color: #ffffff;
 }
 
-.advantages {
+.test {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.test .bigger {
+    width: 700px;
+    padding: 20px 0;
+}
+
+.test .smaller {
+    width: 500px;
+    margin-right: -50px;
+}
+
+.test h3::before, .test_hamak::before, .step3::before {
+    content: "";
+    background-image: url(../img/back.png);
+    background-position: -1px -110px;
+    background-size: 800px;
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    left: 200px;
+    top: 10px;
+}
+
+.test_hamak::before {
+    background-position: -320px -110px;
+}
+
+.step3::before {
+    background-position: -650px -110px;
+}
+
+.test .test2 {
+    position: absolute;
+    top: 610px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.test .test3 {
+    position: absolute;
+    top: 610px;
+    right: 200px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 26px 0;
+    margin: 50px 0;
+}
+
+.test a {
+    background-color: #bcc8d3;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    box-shadow: 2px 2px 3px #77787b;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding: 14px;
+    letter-spacing: 0.8px;
+    width: 200px;
+    margin: 10px;
+}
+
+.test .details {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.test .details .detail {
+    align-self: center; 
+    display: flex;
+    flex-direction: row;
+}
+
+.test .details img {
+    width: 80px;
+    margin: 10px;
+}
+
+.test .details .text {
+    max-width: 100px;
+    padding: 50px 10px;
+}
+
+.test_hamak {
+    position: relative;
     padding: 50px 0;
+    background-color: #f4f7f7;
+}
+
+.test_hamak .types {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.test_hamak .types img {
+    width: 400px;
+}
+
+.step3 {
+    position: relative;
+    padding: 50px 0;
+}
+
+.step3 form {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: solid 1px rgb(205, 205, 205);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 40px 20px;
+    background-color: #f4f7f7;
+}
+
+.step3 form span {
+    display: block;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+}
+
+.step3 form input, .step3 form button {
+    display: block;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-size: 14px;
+    width: 100%;
+    border: solid 1px rgb(205, 205, 205);
+    border-radius: 5px;
+    height: 46px;
+}
+
+.step3 form button {
+    background-color: #bcc8d3;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.advantages {
+    padding: 0 0 50px;
+    background-color: #f4f7f7;
 }
 
 .advantages .wrapper {
@@ -211,27 +375,16 @@ header button a, .goods button a {
     text-align: left;
 }
 
-.hamak {
-    overflow: hidden;
-    margin: 30px 0;
-    box-sizing: border-box;
+.gallery {
+    padding: 0 0 50px;
 }
 
-.goods h3 {
-    text-align: center;
-    padding-top: 30px;
-    font-size: 24px;
+.gallery .photos {
+    white-space: nowrap;
 }
 
-.goods .about {
-    display: flex;
-    margin: 10px;
-} 
-
-.goods .description {
-    text-align: justify;
-    width: 70%;
-    padding-bottom: 20px;
+.gallery img{
+   height: 300px; 
 }
 
 .goods .price {
@@ -249,72 +402,8 @@ header button a, .goods button a {
 }
 
 .goods .price button:hover {
-    background-color: #f7a801;
+    background-color: #6787e7;
     box-shadow: none;
-}
-
-.goods img {
-    width: 70%;
-    float: left;
-    padding: 10px;
-    margin-right: 20px;
-}
-
-.goods .details {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 30px;
-}
-
-.goods .details .detail {
-    align-self: center; 
-    display: flex;
-    flex-direction: row;
-}
-
-.goods .details img {
-    width: 80px;
-    margin: 10px;
-}
-
-.goods .details .text {
-    max-width: 100px;
-    padding: 50px 10px;
-}
-
-.terms_and_delivery {
-    text-align: center;
-    padding: 30px;
-}
-
-.terms_and_delivery h2 {
-    font-size: 26px;
-    margin: 0;
-}
-
-.scheme {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px 0;
-    margin: 0 -20px;
-}
-
-.stage {
-    box-sizing: border-box;
-    width: 25%;
-}
-
-.terms_and_delivery img {
-    width: 150px;
-    padding: 20px;
-}
-
-.terms_and_delivery .text {
-    max-width: 200px;
-    text-align: center;
-    font-size: 16px;
-    margin: 0 auto;
 }
 
 .order {
@@ -368,7 +457,7 @@ header button a, .goods button a {
 }
 
 .order form button:hover {
-    background-color: #f7a801;
+    background-color: #6787e7;
 }
 
 footer {
