@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
     $(function() {
         $('.smooth').on('click', function(event) {
             var target = $(this.getAttribute('href'));
@@ -20,7 +20,8 @@ $(document).ready(function(){
         $( ".burger" ).removeClass( "active" );
       }
     });
-    
+
+$(document).ready(function(){
     $(".lightbox").fancybox();
 
     $(function(){
