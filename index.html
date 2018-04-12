@@ -21,8 +21,8 @@
         <div class="wrapper">
             <nav class="navbar">
                 <ul>
-                    <li><a class="smooth" href="#goods">выбрать гамак</a></li>
-                    <li><a class="smooth" href="#terms_and_delivery">как мы работаем</a></li>
+                    <li><a class="smooth" href="#steps">выбрать гамак</a></li>
+                    <li><a class="smooth" href="#advantages">качество материалов</a></li>
                     <li><a class="smooth" href="#order">заказать гамак</a></li>
                     <li><a class="smooth" href="#contacts">контакты</a></li>
                 </ul>
@@ -44,12 +44,12 @@
         </div>
     </header>
     <main>
-        <div class="test">
+        <section class="step1" id="steps">
          <div class="wrapper">
           <h3>выбрать каркас:</h3>
             <div class="number"></div>
             <img class="bigger animated slideInLeft" src="img/stand.png" alt="каркас">
-            <div class="test2">
+            <div class="buttons_for_details">
                 <a data-fancybox data-src="#hidden-content" href="javascript:;">Kasia</a>
                     <div class="details" id="hidden-content">
                     <div class="detail length">
@@ -89,7 +89,7 @@
                      </div>
                    </div>
                 <a data-fancybox data-src="#hidden-content" href="javascript:;">Isabel</a>
-                                   <div class="details">
+                    <div class="details">
                      <div class="detail length">
                          <img src="img/length.png" alt="длина">
                          <div class="text">Длина: 385см</div>
@@ -109,7 +109,7 @@
                    </div>
             </div>
             <img class="smaller animated slideInRight" src="img/doub_stojak.png" alt="">
-            <div class="test3">
+            <div class="button_for_details">
                 <a data-fancybox data-src="#hidden-content" href="javascript:;">Doub</a>
                     <div class="details">
                      <div class="detail length">
@@ -131,25 +131,32 @@
                    </div>
             </div>
          </div>
-         </div>
-         <div class="test_hamak">
+        </section>
+        <section class="step2">
              <div class="wrapper">
                  <h3>выбрать гамак</h3>
                  <div class="types">
-                    <a href="/img/morskaya_volna.png" data-fancybox="group" data-caption="My caption #1" class="animated zoomIn"><img src="/img/morskaya_volna.png" alt="">
-                    </a>
-                    <a href="/img/ecru.png" data-fancybox="group" data-caption="My caption #2" class="animated zoomIn">
-                     <img src="/img/ecru.png" alt="">
-                     </a>
-                     <a href="/img/terakotta.png" data-fancybox="group" data-caption="My caption #3" class="animated zoomIn">
-                     <img src="/img/terakotta.png" alt="">
-                     </a>
+                    <div class="fancybox-wrapper">
+                        <a href="img/morskaya_volna.png" data-fancybox="group" data-caption="Морская волна" class="lightbox">
+                            <img src="img/morskaya_volna.png" alt="">
+                        </a>
+                    </div>
+                    <div class="fancybox-wrapper">
+                        <a href="img/ecru.png" data-fancybox="group" data-caption="Экрю" class="lightbox">
+                            <img src="img/ecru.png" alt="">
+                        </a>
+                    </div>
+                    <div class="fancybox-wrapper">
+                         <a href="img/terakotta.png" data-fancybox="group" data-caption="Терракот" class="lightbox">
+                             <img src="img/terakotta.png" alt="">
+                         </a>
+                    </div>
                  </div>
              </div>
-         </div>
+        </section>
         <section class="step3">
             <div class="wrapper">
-            <h3>заявить о себе</h3>
+            <h3>оставить заявку</h3>
             <form id="contact-form">
                 <span>
                 <input type="text" name="name" id="name" placeholder="Имя*" required>
@@ -166,7 +173,7 @@
             </form>
             </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
         <h3>о качестве материалов</h3>
         <div class="wrapper">
                <div class="first advantage">
@@ -196,29 +203,23 @@
             <div class="wrapper">
             <h3>фотогалерея для вдохновения</h3>
             <div class="photos">
-            <a href="/img/gallery1.jpg" data-fancybox="group" data-caption="Caption #1">
-                <img src="/img/gallery1.jpg" alt="">
+            <a href="img/gallery1.jpg" data-fancybox="group2" class="lightbox">
+                <img src="img/gallery1.jpg" alt="">
             </a>
-            <a href="/img/gallery2.jpg" data-fancybox="group" data-caption="Caption #1">
-                <img src="/img/gallery3.jpg" alt="">
+            <a href="img/gallery9.jpg" data-fancybox="group2" class="lightbox">
+                <img src="img/gallery9.jpg" alt="">
             </a>
-            <a href="/img/gallery9.jpg" data-fancybox="group" data-caption="Caption #1">
-                <img src="/img/gallery9.jpg" alt="">
+            <a href="img/gallery4.jpg" data-fancybox="group2" class="lightbox">
+                <img src="img/gallery4.jpg" alt="">
             </a>
-            <a href="/img/gallery4.jpg" data-fancybox="group" data-caption="Caption #1">
-                <img src="/img/gallery4.jpg" alt="">
+            <a href="img/gallery5.jpg" data-fancybox="group2" class="lightbox">
+                <img src="img/gallery5.jpg" alt="">
             </a>
-            <a href="/img/gallery5.jpg" data-fancybox="group" data-caption="Caption #1">
-                <img src="/img/gallery5.jpg" alt="">
+            <a href="img/gallery7.jpg" data-fancybox="group2" class="lightbox">
+                <img src="img/gallery7.jpg" alt="">
             </a>
-            <a href="/img/gallery7.jpg" data-fancybox="group" data-caption="Caption #1">
-                <img src="/img/gallery7.jpg" alt="">
-            </a>
-            <a href="/img/gallery8.jpg" data-fancybox="group" data-caption="Caption #1">
-                <img src="/img/gallery8.jpg" alt="">
-            </a>
-            <a href="/img/gallery6.jpg" data-fancybox="group" data-caption="Caption #1">
-                <img src="/img/gallery6.jpg" alt="">
+            <a href="img/gallery8.jpg" data-fancybox="group2" class="lightbox">
+                <img src="img/gallery8.jpg" alt="">
             </a>
             </div>
             </div>
@@ -247,7 +248,7 @@
     </main>
     <footer>
         <div class="wrapper">
-           <div class="contacts">
+           <div class="contacts" id="contacts">
               <div class="bold">Позвоните нам:</div>
               <a href="tel:+380632900696">+380 63 290-06-96</a> 
               <div class="bold">Режим работы:</div>
