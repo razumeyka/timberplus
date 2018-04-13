@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
     $(function() {
         $('.smooth').on('click', function(event) {
             var target = $(this.getAttribute('href'));
@@ -21,7 +21,6 @@
       }
     });
 
-$(document).ready(function(){
     $(".lightbox").fancybox();
 
     $(function(){
@@ -33,7 +32,7 @@ $(document).ready(function(){
         if (form.checkValidity()) {
             ev.preventDefault();
             $.ajax({
-                url: "https://formspree.io/anastasiya.razumeyko@gmail.com, 
+                url: "https://formspree.io/anastasiya.razumeyko@gmail.com",
                 method: "POST",
                 data: {
                     имя: $('#name').val(),

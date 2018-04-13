@@ -68,6 +68,7 @@ header {
 
 .menu nav ul li a:hover {
     box-sizing: border-box;
+    border-radius: 2px;
     background-color: #4d66b1;
 }
 
@@ -79,9 +80,6 @@ header {
 
 .menu .phone a {
     text-decoration: none;
-}
-
-.menu .phone a {
     font-size: 24px;
     color: white;
     padding: 0;
@@ -151,20 +149,19 @@ header .for_sale1 {
     padding-top: 200px;
 }
 
-header button, .goods button{
+header .button {
     background-color: rgba(163, 198, 221, 0.5);
     display: block;
-    border-radius: 2px;
-    cursor: pointer;
     box-sizing: border-box;
-    border: none;
-    text-decoration: none;
     box-shadow: 2px 2px 3px #8b99c5;
+    border-radius: 2px;
+    border: none;
+    width: 250px;
+    text-decoration: none;
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
     text-align: center;
     padding: 14px;
     margin-top: 20px;
@@ -175,38 +172,34 @@ header button, .goods button{
     -webkit-transition: background-color 0.8s 0.1s ease;
 }
 
-header button:hover {
+header .button:hover {
     background-color: #4d66b1;
     box-shadow: none;
 }
 
-header button a, .goods button a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .step1 {
     position: relative;
-    padding: 50px 0 100px;
+    padding: 50px 0 150px;
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
     font-size: 26px;
     text-transform: uppercase;
+    margin-left: 300px;
 }
 
 .step1 .bigger {
-    max-width: 700px;
+    max-width: 60%;
     padding: 20px 0;
 }
 
 .step1 .smaller {
-    max-width: 500px;
+    max-width: 40%;
     margin-right: -50px;
 }
 
-.step1 h3::before, .step2::before, .step3::before {
+.step1::before, .step2::before, .step3::before {
     content: "";
     background-image: url(../img/back.png);
     background-position: -1px -110px;
@@ -236,7 +229,7 @@ h3 {
 .step1 .button_for_details {
     position: absolute;
     top: 610px;
-    right: 145px;
+    right: 185px;
 }
 
 .step1 a {
@@ -263,14 +256,12 @@ h3 {
 .step1 .details {
     display: none;
     flex-wrap: wrap;
-    flex-direction: column;
     margin-top: 30px;
 }
 
 .step1 .details .detail {
     align-self: center; 
     display: flex;
-    flex-direction: row;
 }
 
 .step1 .details img {
@@ -298,16 +289,17 @@ h3 {
 .step2 .types .fancybox-wrapper {
     box-sizing: border-box;
     width: 33.3333%;
-    padding: 0 20px;
-}
-
-.step2 .types .fancybox-wrapper a {
-    line-height: 0;
-    font-size: 0;
+    padding: 20px;
 }
 
 .step2 .types img {
     width: 100%;
+}
+
+.step2 .textile {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .step3 {
@@ -404,25 +396,6 @@ h3 {
    height: 300px; 
 }
 
-.goods .price {
-    font-size: 30px;
-    font-weight: bold;
-    width: 30%;
-    text-align: center;
-}
-
-.goods .price button {
-    background-color: #4d66b1;
-    margin: 20px auto;
-    height: 50px;
-    width: 70%;
-}
-
-.goods .price button:hover {
-    background-color: #6787e7;
-    box-shadow: none;
-}
-
 .order {
     background-image: url(../img/background_main5.jpg);
     background-position: center center;
@@ -515,7 +488,7 @@ footer .bold {
     padding: 10px 0;
 }
 
-@media (max-width: 933px) {
+@media screen and (max-width: 933px) {
     .menu .navbar {
     display: none;
     }
@@ -544,32 +517,19 @@ footer .bold {
     background-color: #4d66b1;
     }
     
-    .goods img {
-    float: none;
-    margin: o auto;
-    width: 100%;
-    }
-
-   .goods .details {
-    flex-direction: row;
-    margin: 10px;
+    .step1::before, .step2::before, .step3::before {
+    left: 50px;
     }
     
-    .goods .details .detail {
-    box-sizing: border-box;
-    width: 25%;
-    padding: 10px;
+    h3 {
+    margin-left: 170px;
     }
 }
 
-@media (max-width: 867px) {
+@media screen and (max-width: 867px) {
     
     .advantage {
     width: 100%;
-    }
-    
-   .goods img {
-    clear: right;
     }
     
     .step2 .types .fancybox-wrapper {
@@ -584,39 +544,12 @@ footer .bold {
     height: 200px; 
     }
     
-    .stage {
-    width: 50%;
-    }
-    
     .order form {
     padding: 50px 30px;
     }
 }
 
-@media (max-width: 766px) {
-    
-    .goods .about {
-    flex-wrap: wrap;
-    } 
-
-    .goods .description {
-    width: 100%;
-    }
-
-    .goods .price {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    }
-    
-    .goods .price button {
-    margin: 0 0 0 auto; 
-    width: 40%;
-    }
-    
-    .goods .details .detail {
-    width: 50%;
-    }
+@media screen and (max-width: 766px) {
     
     footer .wrapper {
     justify-content: center;
@@ -628,7 +561,31 @@ footer .bold {
     }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 660px) {
+    .step1::before, .step2::before, .step3::before {
+        background-size: 500px;
+        width: 90px;
+        height: 150px;
+    }
+
+    .step1::before {
+        background-position: -1000px -70px;
+    }
+
+    .step2::before {
+        background-position: -1200px -70px;
+    }
+
+    .step3::before {
+        background-position: -1410px -70px;
+    }
+    
+    h3 {
+        margin-left: 130px;
+    }
+}
+
+@media screen and (max-width: 550px) {
     
     .wrapper {
      padding:0 15px;
@@ -641,38 +598,7 @@ footer .bold {
     .menu .navbar ul {
     left:30px;
     }
-    
-    .goods .price {
-    width: 100%;
-    display: block;
-    }
-    
-    .goods .price button {
-    margin: 20px auto;
-    width: 70%;
-    }
-    
-    .goods .details .detail {
-    flex-direction: column;
-    }
-    
-    .goods .details img {
-    width: 60px;
-    padding: 0;
-    margin: 0 auto;
-    }
-    
-    .goods .details .text {
-    width: auto;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
-    }
-    
-    .stage {
-    width: 100%;
-    }
-    
+
     .step3 form span {
     width: 100%;
     }
