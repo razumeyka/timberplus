@@ -179,24 +179,8 @@ header .button:hover {
 
 .step1 {
     position: relative;
-    padding: 50px 0 150px;
-}
-
-h3 {
-    text-align: left;
-    font-size: 26px;
-    text-transform: uppercase;
-    margin-left: 300px;
-}
-
-.step1 .bigger {
-    max-width: 60%;
-    padding: 20px 0;
-}
-
-.step1 .smaller {
-    max-width: 40%;
-    margin-right: -50px;
+    padding: 50px 0;
+    overflow: hidden;
 }
 
 .step1::before, .step2::before, .step3::before {
@@ -219,59 +203,46 @@ h3 {
     background-position: -650px -110px;
 }
 
-.step1 .buttons_for_details {
-    position: absolute;
-    top: 610px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.step1 .button_for_details {
-    position: absolute;
-    top: 610px;
-    right: 185px;
-}
-
-.step1 a {
-    background-color: #bcc8d3;
-    display: block;
-    border-radius: 2px;
-    cursor: pointer;
-    box-sizing: border-box;
-    border: none;
-    text-decoration: none;
-    box-shadow: 2px 2px 3px #77787b;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+h2 {
+    text-align: left;
+    font-size: 26px;
     text-transform: uppercase;
-    line-height: 1.2;
+    margin-left: 300px;
+}
+
+.step1 .stand {
+    padding: 70px 0;
+}
+
+.step1 .stand img{
+    width: 60%;
+    float: left;
+}
+
+.step1 table {
     text-align: center;
-    padding: 14px;
-    letter-spacing: 0.8px;
-    width: 200px;
-    margin: 10px;
+    font-size: 16px;
+    margin-left: 50px;
 }
 
-.step1 .details {
-    display: none;
-    flex-wrap: wrap;
-    margin-top: 30px;
+.step1 table th {
+    font-size: 20px;
+    padding: 10px 10px 20px;
 }
 
-.step1 .details .detail {
-    align-self: center; 
-    display: flex;
+.step1 table .prices td {
+    background-color: #5c594d;
+    padding: 20px 10px;
+    font-size: 18px;
+    color: #ffffff;
 }
 
-.step1 .details img {
-    width: 80px;
-    margin: 10px;
+.step1 table .prices .noprice {
+    background-color: #ffffff;
 }
 
-.step1 .details .text {
-    max-width: 100px;
-    padding: 50px 10px;
+.step1 table img {
+    width: 50px;
 }
 
 .step2 {
@@ -296,7 +267,7 @@ h3 {
     width: 100%;
 }
 
-.step2 .textile {
+.step2 .textile, .step1 .type, .step1 .price  {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -347,6 +318,12 @@ h3 {
 .advantages {
     padding: 50px 0;
     background-color: #f4f7f7;
+}
+
+h3 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
 .advantages .wrapper {
@@ -521,15 +498,17 @@ footer .bold {
     left: 50px;
     }
     
-    h3 {
+    h2 {
     margin-left: 170px;
     }
 }
 
 @media screen and (max-width: 867px) {
     
-    .advantage {
+    .step1 .stand img{
     width: 100%;
+    float: none;
+    margin-bottom: 50px;
     }
     
     .step2 .types .fancybox-wrapper {
@@ -538,6 +517,10 @@ footer .bold {
     
     .step3 form span {
     width: 50%;
+    }
+    
+    .advantage {
+    width: 100%;
     }
     
     .gallery img{
@@ -580,7 +563,7 @@ footer .bold {
         background-position: -1410px -70px;
     }
     
-    h3 {
+    h2 {
         margin-left: 130px;
     }
 }
