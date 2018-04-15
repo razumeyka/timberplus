@@ -585,6 +585,10 @@ footer .bold {
     .menu .navbar ul {
     left:30px;
     }
+    
+    .step1::before, .step2::before, .step3::before {
+    top: 60px;
+    }
 
     .step3 form span {
     width: 100%;
