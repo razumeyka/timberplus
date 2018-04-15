@@ -224,6 +224,7 @@ h2 {
     vertical-align: middle;
     font-size: 16px;
     margin-left: 50px;
+    border-collapse: collapse;
 }
 
 .step1 table th {
@@ -231,16 +232,34 @@ h2 {
     padding: 10px 10px 20px;
 }
 
+.step1 table td {
+    padding: 0;
+}
+
+.step1 table .bordered {
+    border: 1px solid #d5d4d0;
+}
+
+.step1 table .top_bordered {
+    border-top: 1px solid #d5d4d0;
+}
+
+.step1 table .special {
+    border-bottom: 1px solid #ffffff;
+}
+
 .step1 table .prices td {
     background-color: #5c594d;
     padding: 20px 10px;
     font-size: 18px;
     color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .step1 table .prices .noprice {
     background-color: #ffffff;
 }
+
 
 .step1 table img {
     width: 50px;
