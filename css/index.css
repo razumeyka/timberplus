@@ -221,6 +221,7 @@ h2 {
 
 .step1 table {
     text-align: center;
+    vertical-align: middle;
     font-size: 16px;
     margin-left: 50px;
 }
@@ -508,7 +509,10 @@ footer .bold {
     .step1 .stand img{
     width: 100%;
     float: none;
-    margin-bottom: 50px;
+    }
+    
+    .step1 table {
+    margin: 50px 0 0;
     }
     
     .step2 .types .fancybox-wrapper {
