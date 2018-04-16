@@ -500,7 +500,7 @@ h3 {
     padding: 30px 70px;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px #7e8c99;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .order form input, .order form select {
@@ -508,7 +508,7 @@ h3 {
     width: 100%; 
     height: 50px;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 15px auto;
     box-sizing: border-box;
     border: none;
@@ -517,7 +517,7 @@ h3 {
 .order form button {
     background-color: #4d66b1;
     display: block;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     box-sizing: border-box;
     border: none;
