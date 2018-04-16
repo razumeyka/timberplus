@@ -22,9 +22,30 @@ $(document).ready(function(){
     });
 
     $(".lightbox").fancybox();
+});
 
     $(function(){
-       $('#contact-form button[type=button]').click(sendForm); 
+        $('form').submit(function(e){
+            e.preventDefault();
+            console.log();
+            $.ajax({
+                url: "https://formspree.io/anastasiya.razumeyko@gmail.com",
+                method: "POST",
+                /*
+                data: {
+                    имя: $('#name').val(),
+                    телефон: $('#number').val(),
+                    модель: $('#type').val(),
+                    цвет: $('#color').val(),
+                },*/
+                data:$(this).serializeArray(),
+            dataType: "json"
+            })
+        });
+    })
+/*
+    $(function(){
+       $('.contact-form button[type=button]').click(sendForm); 
     });
 
     function sendForm(ev) {
@@ -36,13 +57,13 @@ $(document).ready(function(){
                 method: "POST",
                 data: {
                     имя: $('#name').val(),
-                    email: $('#email').val(),
                     телефон: $('#number').val(),
                     модель: $('#type').val(),
                     цвет: $('#color').val(),
                 },
-            })
             dataType: "json"
+            })
+            
         }
-    }
-});
+    }*/
+

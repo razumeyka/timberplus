@@ -47,7 +47,7 @@ header .menu .navbar ul li {
     margin: 10px;
 }
 
-.menu nav ul li a {
+header .menu nav ul li a {
     padding: 10px;
     color: white;
     text-transform: uppercase;
@@ -55,7 +55,7 @@ header .menu .navbar ul li {
     position: relative;
 }
 
-.menu nav ul a:after{
+header .menu nav ul a:after{
     content: '';
     display: block;
     position: absolute; 
@@ -70,24 +70,24 @@ header .menu .navbar ul li {
     -webkit-transition: width 0.8s 0.1s ease;
 }
 
-.menu nav ul a:hover:after {
+header .menu nav ul a:hover:after {
 	width: 100%; 
 }
 
-.menu .phone {
+header .menu .phone {
     position: absolute;
     right: 15px;
     top: 15px;
 }
 
-.menu .phone a {
+header .menu .phone a {
     text-decoration: none;
     font-size: 24px;
     color: white;
     padding: 0;
 }
 
-.burger {
+header .burger {
     display: none;
     position: absolute;
     cursor: pointer;
@@ -100,7 +100,7 @@ header .menu .navbar ul li {
     border-radius: 4px;
 }
 
-.burger span, .burger span::before, .burger span::after {
+header .burger span, .burger span::before, .burger span::after {
     cursor: pointer;
     border-radius: 5px;
     height: 3px;
@@ -114,33 +114,33 @@ header .menu .navbar ul li {
 }
 
 
-.burger span::before {
+header .burger span::before {
     content: '';
     left: 0;
 }
 
-.burger span::after {
+header .burger span::after {
     content: '';
     left: 0;
     top: 22px;
 }
 
-.burger.active span {
+header .burger.active span {
     background-color: transparent;
 }
     
- .burger.active span::before  {
+ header .burger.active span::before  {
     transform: rotate(45deg);
     top: 10px;
 }
 
- .burger.active span::after  {
+ header .burger.active span::after  {
     transform: rotate(-45deg);
     top: 10px;
 } 
 
 .first_screen {
-    height: 770px;
+    height: 700px;
     background-color: #f4f7f7;
 }
 
@@ -372,7 +372,7 @@ h2 {
 .step3 form span {
     display: block;
     box-sizing: border-box;
-    width: 25%;
+    width: 33.3333%;
     padding: 10px;
 }
 
@@ -398,6 +398,7 @@ h2 {
     -moz-transition: background-color 0.8s 0.1s ease;
     -o-transition: background-color 0.8s 0.1s ease;
     -webkit-transition: background-color 0.8s 0.1s ease;
+    outline: none;
 }
 
 .step3 form button:hover {
@@ -588,31 +589,30 @@ footer .bold {
 
 
 @media screen and (max-width: 933px) {
-    .menu .navbar {
+    header .menu .navbar {
         display: none;
     }
     
-    .burger {
+    header .burger {
         display: block;
     }
     
-    .menu .navbar ul {
+    header .menu .navbar ul {
         position: absolute;
         z-index: 3;
-        top: 50px;
+        top: 60px;
         left: 55px;
     }
     
-    .menu .navbar ul li {
+    header .menu .navbar ul li {
         float: none;
         background-color: #5ebcbd;
         box-sizing: border-box;
         padding: 10px;
         margin: 5px;
-        box-shadow: 0px 0px 3px #2392a2;
     }
     
-    .menu nav ul li:hover {
+    header .menu nav ul li:hover {
         background-color: rgb(247, 217, 4);
         box-shadow: 0px 0px 3px #f0b002;
     }
@@ -719,11 +719,11 @@ footer .bold {
          padding:0 15px;
     }
     
-    .burger {
+    header .burger {
          left: 15px;   
     }
     
-    .menu .navbar ul {
+    header .menu .navbar ul {
         left:30px;
     }
     
@@ -751,7 +751,7 @@ footer .bold {
 @media screen and (max-width: 410px) {
     
     .first_screen {
-        height: 700px;
+        height: 630px;
     }
     
     .first_screen h1 {
