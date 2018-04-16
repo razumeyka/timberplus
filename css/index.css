@@ -29,25 +29,19 @@ body{
      margin:0 auto;
 }
 
-header {
-    position: relative;
-    height: 770px;
-    background-color: #f4f7f7;
-}
-
-.menu {
+header .menu {
     background-color: #00bbbb;
     height: 60px;
 }
 
-.menu .navbar ul {
+header .menu .navbar ul {
     display: block;
     padding: 10px;
     margin: 0 0 0-30px;
     overflow: hidden;
 }
 
-.menu .navbar ul li {
+header .menu .navbar ul li {
     float: left;
     list-style: none;
     margin: 10px;
@@ -145,23 +139,29 @@ header {
     top: 10px;
 } 
 
-header .wrapper {
+.first_screen {
+    height: 770px;
+    background-color: #f4f7f7;
+}
+
+.first_screen .wrapper {
     position: relative;
 }
 
-header h1 {
+.first_screen h1 {
     font-size: 40px;
     text-transform: uppercase;
-    padding-top: 150px;
+    padding-top: 170px;
     max-width: 370px;
+    margin: 0;
 }
 
-header h1 span {
+.first_screen h1 span {
     font-size: 60px;
     color: #e86a4b;
 }
 
-header h2 {
+.first_screen h2 {
     font-size: 20px;
     text-transform: none;
     text-align: left;
@@ -169,24 +169,19 @@ header h2 {
     margin: 0;
 }
 
-header .for_sale1, header .for_sale2, header .for_sale3 {
+.first_screen .for_sale1, .first_screen .for_sale2, .first_screen .for_sale3 {
     box-sizing: border-box;
     border-radius: 50%;
-    background-color: #a0af10;
-    width: 170px;
-    height: 170px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
-    font-weight: bold;
-    color: #5c594d;
-    padding: 70px 35px;
+    font-weight: bold; 
     color: #ffffff;
     position: absolute;
     z-index: 1;
 }
 
-header .for_sale1 {
+.first_screen .for_sale1 {
     background-color: #e86a4b;
     width: 200px;
     height: 200px;
@@ -194,53 +189,28 @@ header .for_sale1 {
     padding: 70px 20px;
     margin: 20px 0 0 -10px;
     right: 370px;
-    top: -30px;
+    top: -10px;
 }
 
-header .for_sale2 {
+.first_screen .for_sale2 {
+    width: 170px;
+    height: 170px;
+    padding: 70px 35px;
+    background-color: #00bbbb;
     right: 545px;
-    top: 70px;
+    top: 85px;
 }
 
-header .for_sale3 {
+.first_screen .for_sale3 {
     width: 200px;
     height: 200px;
-    background-color: #00bbbb;
+    background-color: #f0b70a;
     padding-top: 80px;
     right: 450px;
-    top: 400px;
+    top: 420px;
 }
 
-header .button {
-    display: none;
-    background-color: #4d66b1;
-    box-sizing: border-box;
-    border-radius: 50%;
-    box-shadow: 2px 2px 3px #8b99c5;
-    border: none;
-    width: 200px;
-    height: 200px;
-    text-decoration: none;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 80px;
-    margin: -60px 0 0 110px;
-    letter-spacing: 0.8px;
-    transition: background-color 0.8s 0.1s ease;
-    -moz-transition: background-color 0.8s 0.1s ease;
-    -o-transition: background-color 0.8s 0.1s ease;
-    -webkit-transition: background-color 0.8s 0.1s ease;
-}
-
-header .button:hover {
-    background-color: #4d66b1;
-    box-shadow: none;
-}
-
-header .circle {
+.first_screen .circle {
     box-sizing: border-box;
     border-radius: 50%;
     background-color: #ebdb0442;
@@ -248,11 +218,11 @@ header .circle {
     width: 600px;
     height: 600px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 5px;
 }
 
-header .circle_wrapper {
+.first_screen .circle_wrapper {
     box-sizing: border-box;
     border-radius: 50%;
     background-color: rgb(247, 217, 4);
@@ -261,7 +231,7 @@ header .circle_wrapper {
     height: 500px;
 }
 
-header img {
+.first_screen .circle img {
     position: absolute;
     top: 50px;
     right: 0;
@@ -448,12 +418,13 @@ h3 {
 .advantages .wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .advantage {
     box-sizing: border-box;
     width: 33.333%;
-    padding: 10px;
+    padding: 15px;
 }
 
 .advantage img {
@@ -591,54 +562,54 @@ footer .bold {
 
 
 @media screen and (max-width: 1050px) {
-    header h1 {
-        padding-top: 0;
+    .first_screen h1 {
+        padding-top: 30px;
         max-width: 770px;
         position: relative;
         z-index: 2;
     }
 
-    header h2 {
+    .first_screen h2 {
         max-width: 700px;
         position: relative;
         z-index: 2;
     } 
     
-    header .for_sale1 {
+    .first_screen .for_sale1 {
         right: 10px;
-        top: -30px;
+        top: -10px;
     }
 
-    header .for_sale2 {
+    .first_screen .for_sale2 {
         right: 560px;
-        top: 270px;
+        top: 290px;
     }
 }
 
 
 @media screen and (max-width: 933px) {
     .menu .navbar {
-    display: none;
+        display: none;
     }
     
     .burger {
-    display: block;
+        display: block;
     }
     
     .menu .navbar ul {
-    position: absolute;
-    z-index: 3;
-    top: 50px;
-    left: 55px;
+        position: absolute;
+        z-index: 3;
+        top: 50px;
+        left: 55px;
     }
     
     .menu .navbar ul li {
-    float: none;
-    background-color: #5ebcbd;
-    box-sizing: border-box;
-    padding: 10px;
-    margin: 5px;
-    box-shadow: 0px 0px 3px #2392a2;
+        float: none;
+        background-color: #5ebcbd;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: 0px 0px 3px #2392a2;
     }
     
     .menu nav ul li:hover {
@@ -647,27 +618,27 @@ footer .bold {
     }
     
     .step1::before, .step2::before, .step3::before {
-    left: 50px;
+       left: 50px;
     }
     
     h2 {
-    margin-left: 170px;
+        margin-left: 170px;
     }
 }
 
 @media screen and (max-width: 867px) {
     
-    header .for_sale1 {
+    .first_screen .for_sale1 {
         display: none;
     }
     
     .step1 .stand img{
-    width: 100%;
-    float: none;
+        width: 100%;
+        float: none;
     }
     
     .step1 table {
-    margin: 50px 0 0;
+        margin: 50px 0 0;
     }
     
     .step2 .types .fancybox-wrapper {
@@ -693,17 +664,17 @@ footer .bold {
 
 @media screen and (max-width: 766px) {
     
-    header .circle {
+    .first_screen .circle {
         right: -200px;
         top: 70px;
     }
     
-    header .for_sale2 {
+   .first_screen .for_sale2 {
         right: 360px;
         top: 340px;
     }
     
-    header .for_sale3 {
+    .first_screen .for_sale3 {
         right: 250px;
         top: 470px;
     }
@@ -756,11 +727,11 @@ footer .bold {
         left:30px;
     }
     
-    header .for_sale2 {
+    .first_screen .for_sale2 {
         display: none;
     }
     
-    header .for_sale3 {
+    .first_screen .for_sale3 {
         display: none;
     }
     
@@ -779,27 +750,27 @@ footer .bold {
 
 @media screen and (max-width: 410px) {
     
-    header {
+    .first_screen {
         height: 700px;
     }
     
-    header h1 {
+    .first_screen h1 {
         font-size: 30px;
     }
     
-    header .circle {
+    .first_screen .circle {
         width: 440px;
         height: 440px;
         right: -160px;
         top: 150px;
     }
     
-    header .circle_wrapper {
+    .first_screen .circle_wrapper {
         width: 340px;
         height: 340px;
     }
 
-    header img {
+    .first_screen .circle img {
         width: 400px;
     }
 
