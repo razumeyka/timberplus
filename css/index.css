@@ -31,7 +31,7 @@ body{
 
 header {
     position: relative;
-    height: 700px;
+    height: 770px;
     background-color: #f4f7f7;
 }
 
@@ -58,16 +58,26 @@ header {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    transition: background-color 0.8s 0.1s ease;
-    -moz-transition: background-color 0.8s 0.1s ease;
-    -o-transition: background-color 0.8s 0.1s ease;
-    -webkit-transition: background-color 0.8s 0.1s ease;
+    position: relative;
 }
 
-.menu nav ul li a:hover {
-    box-sizing: border-box;
-    border-radius: 2px;
-    background-color: #4d66b1;
+.menu nav ul a:after{
+    content: '';
+    display: block;
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: rgb(247, 217, 4); 
+   	transition: width 0.3s ease-out; 
+    -moz-transition: width 0.8s 0.1s ease;
+    -o-transition: width 0.8s 0.1s ease;
+    -webkit-transition: width 0.8s 0.1s ease;
+}
+
+.menu nav ul a:hover:after {
+	width: 100%; 
 }
 
 .menu .phone {
@@ -92,7 +102,7 @@ header {
     height: 45px;
     left: 40px;
     top: 7px;
-    border: 1px solid #4d66b1;
+    border: 1px solid #5c594d;
     border-radius: 4px;
 }
 
@@ -101,7 +111,7 @@ header {
     border-radius: 5px;
     height: 3px;
     width: 30px;
-    background: #4d66b1;
+    background: #5c594d;
     position: absolute;
     display: block;
     top: 11px;
@@ -245,7 +255,7 @@ header .circle {
 header .circle_wrapper {
     box-sizing: border-box;
     border-radius: 50%;
-    background-color: rgba(247, 217, 4, 0.94);
+    background-color: rgb(247, 217, 4);
     padding: 50px;
     width: 500px;
     height: 500px;
@@ -408,7 +418,9 @@ h2 {
 }
 
 .step3 form button {
-    background-color: #bcc8d3;
+    background-color: #f0cf01;
+    border: solid 1px #f0b002;
+    cursor: pointer;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -603,14 +615,14 @@ footer .bold {
     
     .menu .navbar ul {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 50px;
     left: 55px;
     }
     
     .menu .navbar ul li {
     float: none;
-    background-color: rgba(163, 198, 221, 0.75);
+    background-color: #5ebcbd;
     box-sizing: border-box;
     padding: 10px;
     margin: 5px;
@@ -618,7 +630,7 @@ footer .bold {
     }
     
     .menu nav ul li:hover {
-    background-color: #4d66b1;
+        background-color: rgb(247, 217, 4);
     }
     
     .step1::before, .step2::before, .step3::before {
