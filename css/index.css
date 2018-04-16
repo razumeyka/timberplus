@@ -36,7 +36,7 @@ header {
 }
 
 .menu {
-    background-color: #4d66b1;
+    background-color: #00bbbb;
     height: 60px;
 }
 
@@ -136,15 +136,33 @@ header {
 } 
 
 header .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    position: relative;
 }
 
-header .for_sale1, header .for_sale2 {
+header h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 150px;
+    max-width: 370px;
+}
+
+header h1 span {
+    font-size: 60px;
+    color: #e86a4b;
+}
+
+header h2 {
+    font-size: 20px;
+    text-transform: none;
+    text-align: left;
+    max-width: 400px;
+    margin: 0;
+}
+
+header .for_sale1, header .for_sale2, header .for_sale3 {
     box-sizing: border-box;
     border-radius: 50%;
-    background-color: antiquewhite;
+    background-color: #a0af10;
     width: 170px;
     height: 170px;
     font-size: 16px;
@@ -152,24 +170,40 @@ header .for_sale1, header .for_sale2 {
     text-align: center;
     font-weight: bold;
     color: #5c594d;
-    padding: 80px 20px;
+    padding: 70px 35px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 1;
 }
 
 header .for_sale1 {
-    box-sizing: border-box;
-    border-radius: 50%;
-    background-color: #ed8f71;
-    color: #ffffff;
-    width: 300px;
-    height: 300px;
+    background-color: #e86a4b;
+    width: 200px;
+    height: 200px;
     font-size: 20px;
-    padding: 120px 20px;
+    padding: 70px 20px;
     margin: 20px 0 0 -10px;
+    right: 370px;
+    top: -30px;
+}
+
+header .for_sale2 {
+    right: 560px;
+    top: 70px;
+}
+
+header .for_sale3 {
+    width: 200px;
+    height: 200px;
+    background-color: #00bbbb;
+    padding-top: 80px;
+    right: 450px;
+    top: 400px;
 }
 
 header .button {
+    display: none;
     background-color: #4d66b1;
-    display: block;
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: 2px 2px 3px #8b99c5;
@@ -199,12 +233,13 @@ header .button:hover {
 header .circle {
     box-sizing: border-box;
     border-radius: 50%;
-    background-color: #ebdb0412;
+    background-color: #ebdb0442;
     padding: 50px;
-    margin-top: 20px;
     width: 600px;
     height: 600px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 header .circle_wrapper {
@@ -529,6 +564,34 @@ footer .bold {
     padding: 10px 0;
 }
 
+
+
+@media screen and (max-width: 1050px) {
+    header h1 {
+        padding-top: 0;
+        max-width: 770px;
+        position: relative;
+        z-index: 2;
+    }
+
+    header h2 {
+        max-width: 700px;
+        position: relative;
+        z-index: 2;
+    } 
+    
+    header .for_sale1 {
+        right: 10px;
+        top: -30px;
+    }
+
+    header .for_sale2 {
+        right: 560px;
+        top: 270px;
+    }
+}
+
+
 @media screen and (max-width: 933px) {
     .menu .navbar {
     display: none;
@@ -569,6 +632,10 @@ footer .bold {
 
 @media screen and (max-width: 867px) {
     
+    header .for_sale1 {
+        display: none;
+    }
+    
     .step1 .stand img{
     width: 100%;
     float: none;
@@ -601,13 +668,28 @@ footer .bold {
 
 @media screen and (max-width: 766px) {
     
+    header .circle {
+        right: -200px;
+        top: 70px;
+    }
+    
+    header .for_sale2 {
+        right: 360px;
+        top: 340px;
+    }
+    
+    header .for_sale3 {
+        right: 250px;
+        top: 470px;
+    }
+    
     footer .wrapper {
-    justify-content: center;
+        justify-content: center;
     }
     
     footer .contacts, footer .cooperation {
-    width: 100%;
-    text-align: center;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -638,15 +720,23 @@ footer .bold {
 @media screen and (max-width: 550px) {
     
     .wrapper {
-     padding:0 15px;
+         padding:0 15px;
     }
     
     .burger {
-     left: 15px;   
+         left: 15px;   
     }
     
     .menu .navbar ul {
-    left:30px;
+        left:30px;
+    }
+    
+    header .for_sale2 {
+        display: none;
+    }
+    
+    header .for_sale3 {
+        display: none;
     }
     
     .step1::before, .step2::before, .step3::before {
@@ -660,4 +750,28 @@ footer .bold {
     .gallery img{
     height: 150px; 
     }
+}
+
+@media screen and (max-width: 500px) {
+    
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header .circle {
+        width: 440px;
+        height: 440px;
+        right: -160px;
+        top: 150px;
+    }
+    
+    header .circle_wrapper {
+        width: 340px;
+        height: 340px;
+    }
+
+    header img {
+        width: 400px;
+    }
+
 }
