@@ -198,7 +198,7 @@ header .for_sale1 {
 }
 
 header .for_sale2 {
-    right: 560px;
+    right: 545px;
     top: 70px;
 }
 
@@ -424,6 +424,14 @@ h2 {
     color: white;
     font-size: 20px;
     font-weight: bold;
+    transition: background-color 0.8s 0.1s ease;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
+}
+
+.step3 form button:hover {
+    background-color: #fce13c;
 }
 
 .advantages {
@@ -532,6 +540,10 @@ h3 {
     padding: 14px;
     letter-spacing: 0.8px;
     width: 100%;
+    transition: background-color 0.8s 0.1s ease;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
 }
 
 .order form button:hover {
@@ -631,6 +643,7 @@ footer .bold {
     
     .menu nav ul li:hover {
         background-color: rgb(247, 217, 4);
+        box-shadow: 0px 0px 3px #f0b002;
     }
     
     .step1::before, .step2::before, .step3::before {
@@ -764,7 +777,11 @@ footer .bold {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 410px) {
+    
+    header {
+        height: 700px;
+    }
     
     header h1 {
         font-size: 30px;
