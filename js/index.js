@@ -35,8 +35,7 @@ $(document).ready(function(){
             }).done(function(){
                 $.fancybox.open({
                 src: '#thx',
-                type : 'inline',
-                    
+                type : 'inline',   
                 });
             })
                .fail(function(){
