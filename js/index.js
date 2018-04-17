@@ -32,13 +32,13 @@ $(document).ready(function(){
                 method: "POST",
                 data:$(this).serializeArray(),
                 dataType: "json",
-            }).donefunction(){
+            }).done(function(){
                 $.fancybox({
                 'href': '.thx',
                 'width': '360',
                 'height': '340',
                 });
-            }
+            });
                 return false;
         });
     })
