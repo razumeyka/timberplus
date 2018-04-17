@@ -34,14 +34,14 @@ $(document).ready(function(){
                 dataType: "json",
             }).done(function(){
                 $.fancybox.open({
-                'href': '.thx',
+                'href': '#thx',
                 'width': '360',
                 'height': '340',
                 });
             })
                .fail(function(){
                 $.fancybox.open({
-                'href': '.err',
+                'href': '#err',
                 'width': '360',
                 'height': '340',
                 });
