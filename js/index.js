@@ -33,13 +33,19 @@ $(document).ready(function(){
                 data:$(this).serializeArray(),
                 dataType: "json",
             }).done(function(){
-                $.fancybox({
+                $.fancybox.open({
                 'href': '.thx',
                 'width': '360',
                 'height': '340',
                 });
+            })
+               .fail(function(){
+                $.fancybox.open({
+                'href': '.err',
+                'width': '360',
+                'height': '340',
+                });
             });
-                return false;
         });
     })
 });
