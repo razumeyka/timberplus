@@ -22,7 +22,6 @@ $(document).ready(function(){
     });
 
     $(".lightbox").fancybox();
-});
 
     $(function(){
         $('form').submit(function(e){
@@ -31,39 +30,20 @@ $(document).ready(function(){
             $.ajax({
                 url: "https://formspree.io/anastasiya.razumeyko@gmail.com",
                 method: "POST",
-                /*
-                data: {
-                    имя: $('#name').val(),
-                    телефон: $('#number').val(),
-                    модель: $('#type').val(),
-                    цвет: $('#color').val(),
-                },*/
                 data:$(this).serializeArray(),
-            dataType: "json"
+                dataType: "json",
+                success: function(returnedInfo){
+                    $.fancybox({
+                    'type': 'ajax',
+                    'href': './ok.html',
+                    'width': '360',
+                    'height': '340',
+                    });
+                    }
+                return false;
             })
         });
     })
-/*
-    $(function(){
-       $('.contact-form button[type=button]').click(sendForm); 
-    });
+});
 
-    function sendForm(ev) {
-        const form=  document.getElementsByTagName('form')[0];
-        if (form.checkValidity()) {
-            ev.preventDefault();
-            $.ajax({
-                url: "https://formspree.io/anastasiya.razumeyko@gmail.com",
-                method: "POST",
-                data: {
-                    имя: $('#name').val(),
-                    телефон: $('#number').val(),
-                    модель: $('#type').val(),
-                    цвет: $('#color').val(),
-                },
-            dataType: "json"
-            })
-            
-        }
-    }*/
 
