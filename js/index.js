@@ -32,16 +32,14 @@ $(document).ready(function(){
                 method: "POST",
                 data:$(this).serializeArray(),
                 dataType: "json",
-                success: function(returnedInfo){
-                    $.fancybox({
-                    'type': 'ajax',
-                    'href': './ok.html',
-                    'width': '360',
-                    'height': '340',
-                    });
-                    }
+            }).donefunction(){
+                $.fancybox({
+                'href': '.thx',
+                'width': '360',
+                'height': '340',
+                });
+            }
                 return false;
-            })
         });
     })
 });
