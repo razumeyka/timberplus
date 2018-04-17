@@ -34,16 +34,15 @@ $(document).ready(function(){
                 dataType: "json",
             }).done(function(){
                 $.fancybox.open({
-                'href': '#thx',
-                'width': '360',
-                'height': '340',
+                src: '#thx',
+                type : 'inline',
+                    
                 });
             })
                .fail(function(){
                 $.fancybox.open({
-                'href': '#err',
-                'width': '360',
-                'height': '340',
+                src: '#err',
+                type : 'inline',
                 });
             });
         });
