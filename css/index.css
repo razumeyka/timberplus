@@ -140,8 +140,9 @@ header .burger.active span {
 } 
 
 .first_screen {
-    height: 700px;
+    min-height: 700px;
     background-color: #f4f7f7;
+    overflow: hidden;
 }
 
 .first_screen .wrapper {
@@ -664,6 +665,10 @@ footer .bold {
         margin: 50px 0 0;
     }
     
+    .step2 .types {
+        margin: 100px 0;
+    }
+
     .step2 .types .fancybox-wrapper {
     width: 100%;
     }

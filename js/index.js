@@ -28,24 +28,22 @@ $(document).ready(function(){
             e.preventDefault();
             console.log();
             $.ajax({
-                url: "https://formspree.io/anastasiya.razumeyko@gmail.com",
+                url: "/form.php",
                 method: "POST",
                 data:$(this).serializeArray(),
-                dataType: "json",
-            }).done(function(){
-                $.fancybox.open({
-                src: '#thx',
-                type : 'inline',   
-                });
+            }).always(function(msg){
+                if(msg=="OK"){
+                    $.fancybox.open({
+                    src: '#thx',
+                    type : 'inline',   
+                    });
+                }else{
+                    $.fancybox.open({
+                    src: '#err',
+                    type : 'inline',
+                    });
+                }
             })
-               .fail(function(){
-                $.fancybox.open({
-                src: '#err',
-                type : 'inline',
-                });
-            });
         });
     })
 });
-
-
